@@ -1,113 +1,561 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet"href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emmanuel Masitsa | Automotive Engineer, Web Developer & Content Creator</title>
+<meta name="description" content="Emmanuel Masitsa — automotive engineering student, self-taught web developer and content creator in Nairobi, Kenya. Vehicle diagnostics, ECU programming, AutoCAD, and the Masitsa Motors project.">
+
+<meta property="og:title" content="Emmanuel Masitsa | Automotive Engineer, Web Developer & Content Creator">
+<meta property="og:description" content="Automotive engineering student and self-taught developer building real projects — from vehicle diagnostics to Masitsa Motors.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/profile.jpg">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%2314171A'/%3E%3Cpath d='M20 65 L38 32 L50 55 L62 30 L80 65' stroke='%23E2803A' stroke-width='7' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <nav>
-  <a href="#">Home</a>
-  <a href="#Education">Education</a>
-  <a href="#skills">Skills</a>
-  <a href="#Projects">Projects</a>
-  <a href="#Services">Service</a>
-  <a href="#contact">Contact</a>
-</nav>
-    <header>
+
+<div class="grain" aria-hidden="true"></div>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-nav" id="top">
+  <div class="nav-inner">
+    <a href="#top" class="brand">
+      <span class="brand-mark" aria-hidden="true">EM</span>
+      <span class="brand-name">Emmanuel Masitsa</span>
+    </a>
+
+    <nav class="nav-links" id="nav-links">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#automotive">Automotive</a>
+      <a href="#journey">Journey</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Introduction">
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">Nairobi, Kenya</p>
         <h1>Emmanuel Masitsa</h1>
-        <p>Automotive Engineer|Content creator|Programmer</p>
-        <img src="my photo.jpg" alt="My photo"class="profile-pic">
-    </header>
-    
-    <section class="about">
-        <h2>About Me</h2>
-        <P>I am passionate about Automotive diagnostics, coding,content creation and technology.
-            I enjoy learning practical automotive systems and bulidng beginner projects.
-        </P>
-    </section>
-
-    <section id="Education" class="Education">
-        <h2>Education</h2>
-        <div class="card">
-            <h3>AutomotiveEngineering </h3>
-            <p>University student passionate about automobile industry</p>
-            <p>Learning diagnostic,electrical systems and vehicle technology</p>
+        <p class="hero-role">Automotive engineering student, self&#8209;taught web developer, and content creator.</p>
+        <p class="hero-desc">I spend my time between vehicle diagnostic bays and code editors — learning how engines and electronics work, then building digital projects around that same curiosity. <span class="handle">Eng Masitsa</span> is where those two worlds meet.</p>
+        <div class="hero-actions">
+          <a href="#work" class="btn btn-primary">View my work</a>
+          <a href="#contact" class="btn btn-ghost">Let's talk</a>
         </div>
-    </section>
+      </div>
 
-    <section id="skills" class="skills">
-        <h2>skills</h2>
-        <div class="card">
-        <ul>
-            <li>Automotive diagnostics </li>
-            <li>OBD Basics</li>
-            <li>Video Editing</li>
-            <li>HTML & CSS</li>
-            <li>Content creation</li>
+      <aside class="hero-panel" aria-label="Quick facts">
+        <div class="panel-head">
+          <span class="panel-dot" aria-hidden="true"></span>
+          <span class="panel-label">STATUS READOUT</span>
+        </div>
+        <dl class="readout">
+          <div class="readout-row">
+            <dt>Field</dt>
+            <dd>Automotive Engineering</dd>
+          </div>
+          <div class="readout-row">
+            <dt>Institution</dt>
+            <dd>Pc Kinyanjui TTI</dd>
+          </div>
+          <div class="readout-row">
+            <dt>Since</dt>
+            <dd>2023 — Present</dd>
+          </div>
+          <div class="readout-row">
+            <dt>Also building</dt>
+            <dd>Web &amp; automotive brand projects</dd>
+          </div>
+          <div class="readout-row">
+            <dt>Based in</dt>
+            <dd>Nairobi, Kenya</dd>
+          </div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section-inner about-layout">
+      <div class="about-media">
+        <div class="frame-corner">
+          <img src="assets/profile.jpg" alt="Emmanuel Masitsa" loading="lazy">
+        </div>
+      </div>
+      <div class="about-copy">
+        <h2>About me</h2>
+        <p>I'm currently studying for a diploma in Automotive Engineering at Pc Kinyanjui TTI in Nairobi, where I'm building a practical foundation in engine systems, electrical circuits, and vehicle diagnostics. Alongside that, I work as a motorbike rider with Bolt — time on the road that's taught me a lot about how vehicles actually behave and fail, day to day, not just in theory.</p>
+        <p>Outside the classroom, I've taught myself web design and basic development, and I use both AutoCAD and diagnostic tools like OBD scanners to explore how automotive systems are built and repaired. I also create content around automotive topics and technology, and I'm building <strong>Masitsa Motors</strong>, a car dealership concept site, as a way to bring the engineering and development sides of what I do together.</p>
+        <p>I don't have a long résumé yet — what I have is a habit of finishing what I start, and a genuine interest in how things work, whether that's a carburetor or a codebase.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT I DO -->
+  <section class="section section-alt" id="what-i-do">
+    <div class="section-inner">
+      <h2>What I do</h2>
+      <p class="section-lede">A mix of hands-on automotive work and self-taught technical skills.</p>
+
+      <div class="card-grid">
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">&#128663;</div>
+          <h3>Vehicle Diagnostics</h3>
+          <p>Reading and interpreting OBD data, engine sensors, and basic electrical faults on petrol and diesel vehicles.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">&#9881;&#65039;</div>
+          <h3>ECU Programming</h3>
+          <p>Hands-on practice with ECU programming tools and hardware — understanding how a vehicle's brain is read and reflashed.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">&#128207;</div>
+          <h3>AutoCAD &amp; 3D Modelling</h3>
+          <p>Modelling automotive components like camshafts to understand geometry, tolerances, and mechanical design.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">&#128187;</div>
+          <h3>Web Design &amp; Development</h3>
+          <p>Building clean, functional websites — from a personal portfolio to a full dealership concept site for Masitsa Motors.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">&#127909;</div>
+          <h3>Content Creation</h3>
+          <p>Filming and editing automotive and lifestyle content across Instagram, TikTok, and YouTube under the Masitsa name.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">&#128295;</div>
+          <h3>Practical Vehicle Service</h3>
+          <p>Basic bike and vehicle maintenance, preventive checks, and everyday troubleshooting learned on the job.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOOLS -->
+  <section class="section" id="tools">
+    <div class="section-inner">
+      <h2>Tools &amp; technologies</h2>
+      <p class="section-lede">What I actually build and diagnose with — no exaggeration, just what I use.</p>
+      <div class="tool-tags">
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Git &amp; GitHub</span>
+        <span class="tag">GitHub Pages</span>
+        <span class="tag">AutoCAD</span>
+        <span class="tag">OBD Diagnostic Tools</span>
+        <span class="tag">ECU Programming Hardware</span>
+        <span class="tag">Video Editing Software</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PROJECTS -->
+  <section class="section section-alt" id="work">
+    <div class="section-inner">
+      <h2>Featured work</h2>
+      <p class="section-lede">Real projects, at real stages — some finished, some still in progress.</p>
+
+      <div class="project-grid">
+
+        <article class="project-card project-card-feature">
+          <div class="project-media">
+            <img src="assets/masitsa-motors-cover.svg" alt="Masitsa Motors website cover graphic" loading="lazy">
+          </div>
+          <div class="project-body">
+            <div class="project-top">
+              <h3>Masitsa Motors</h3>
+              <span class="status-pill status-live">Live</span>
+            </div>
+            <p>A car dealership &amp; imports concept site for Nairobi buyers — a featured vehicle catalogue, a "sell your car" page, and a brand showcase, all wired to WhatsApp for direct enquiries instead of a full backend.</p>
+            <ul class="feature-list">
+              <li>Home, Browse Inventory, and Sell Your Car pages</li>
+              <li>Featured vehicle listings with pricing in KES</li>
+              <li>WhatsApp-based enquiry flow for every listing</li>
+              <li>Brand showcase and social presence for the dealership</li>
+            </ul>
+            <div class="project-meta">
+              <span>HTML / CSS / JavaScript</span>
+              <span>&middot;</span>
+              <span>Hosted on GitHub Pages</span>
+            </div>
+            <div class="project-links">
+              <a href="https://masitsakibiru-netizen.github.io/masitsa-motors/" target="_blank" rel="noopener">Live Demo &#8599;</a>
+              <a href="#automotive">Read the case study &#8594;</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-media">
+            <img src="assets/bike-diagnostic.jpg" alt="Reading diagnostic data from an electric bike" loading="lazy">
+          </div>
+          <div class="project-body">
+            <div class="project-top">
+              <h3>Electric Bike Diagnostics</h3>
+              <span class="status-pill status-progress">Concept</span>
+            </div>
+            <p>An early, beginner-level exploration of reading sensor data from a bike to support basic servicing and repair.</p>
+            <div class="project-meta"><span>Automotive diagnostics</span></div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-media">
+            <img src="assets/camshaft-model.jpeg" alt="3D camshaft model in AutoCAD" loading="lazy">
+          </div>
+          <div class="project-body">
+            <div class="project-top">
+              <h3>AutoCAD 3D Modelling</h3>
+              <span class="status-pill status-progress">In Practice</span>
+            </div>
+            <p>Modelling automotive components like this camshaft in AutoCAD to build 3D design skills for automotive applications.</p>
+            <div class="project-meta"><span>AutoCAD</span></div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-media">
+            <img src="assets/ecu-program.jpeg" alt="ECU programming hardware connected to a circuit board" loading="lazy">
+          </div>
+          <div class="project-body">
+            <div class="project-top">
+              <h3>ECU Programming</h3>
+              <span class="status-pill status-progress">In Practice</span>
+            </div>
+            <p>Getting hands-on with ECU programming hardware and software to understand how a vehicle's electronics are configured.</p>
+            <div class="project-meta"><span>ECU hardware &amp; software</span></div>
+          </div>
+        </article>
+
+        <article class="project-card project-card-soft">
+          <div class="project-body">
+            <div class="project-top">
+              <h3>More projects coming soon</h3>
+              <span class="status-pill status-progress">Building</span>
+            </div>
+            <p>I'm currently working on additional web and automotive projects. This space will be updated as they're ready to share.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE STUDY -->
+  <section class="section" id="case-study">
+    <div class="section-inner">
+      <h2>Case study</h2>
+      <div class="case-study">
+        <div class="case-head">
+          <h3>Masitsa Motors</h3>
+          <a href="https://masitsakibiru-netizen.github.io/masitsa-motors/" target="_blank" rel="noopener" class="btn btn-ghost btn-small">Visit the site &#8599;</a>
+        </div>
+
+        <div class="case-grid">
+          <div class="case-item">
+            <span class="case-label">Problem</span>
+            <p>A small car dealership needs a way to showcase vehicles and take enquiries online, without the cost or complexity of a full booking-and-payments backend.</p>
+          </div>
+          <div class="case-item">
+            <span class="case-label">Solution</span>
+            <p>A fast, static multi-page site — home, inventory, and a sell-your-car page — where every "Enquire" button opens a pre-filled WhatsApp message to the dealership's number, turning browsing into a direct conversation.</p>
+          </div>
+          <div class="case-item">
+            <span class="case-label">Technology</span>
+            <p>Built with plain HTML, CSS, and JavaScript and deployed on GitHub Pages, with the WhatsApp Click-to-Chat links handling enquiries instead of a database or server.</p>
+          </div>
+          <div class="case-item">
+            <span class="case-label">Currently working on</span>
+            <p>Continuing to expand the inventory pages and refine the sell-your-car flow as the dealership concept grows.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUTOMOTIVE -->
+  <section class="section section-alt" id="automotive">
+    <div class="section-inner automotive-layout">
+      <div>
+        <h2>The automotive side</h2>
+        <p class="section-lede">This is what sets my work apart from a typical developer portfolio.</p>
+        <p>My automotive engineering studies at Pc Kinyanjui TTI cover engine systems, electrical circuits, and vehicle diagnostics. I put that into practice through OBD diagnostic tools, hands-on ECU programming, and AutoCAD modelling of components — and my time riding for Bolt keeps me close to how vehicles actually perform and fail on the road.</p>
+        <ul class="plain-list">
+          <li>Vehicle diagnostics &amp; repair basics</li>
+          <li>Engine systems — petrol &amp; diesel</li>
+          <li>Electrical systems basics</li>
+          <li>Preventive maintenance</li>
+          <li>OBD diagnostic tools</li>
         </ul>
+      </div>
+      <div class="automotive-media">
+        <div class="frame-corner">
+          <img src="assets/bike-repair-1.jpg" alt="Motorbike maintenance work" loading="lazy">
         </div>
-    </section>
-
-    <section id="Projects" class="Projects">
-        <h2>projects</h2>
-        <div class="card">
-            <img src="bikediagnostic.jpg" alt="Bike diagnostic"class="project-img">
-
-            <h3>Electric Bike diagnostics Idea</h3>
-            <p>A beginner concept for reading bike data sensor data and doing service and repaire</p>
+        <div class="frame-corner frame-corner-offset">
+          <img src="assets/camshaft.png" alt="Camshaft component model" loading="lazy">
         </div>
+      </div>
+    </div>
 
-        <div class="card">
-            <img src="camshaftmodel.jpeg" alt="camshaft 3D model"class="project-img">
+    <div class="section-inner brand-strip">
+      <div class="brand-strip-text">
+        <p class="eyebrow">Automotive brand</p>
+        <h3>Masitsa Motors</h3>
+        <p>Beyond the classroom, I'm building Masitsa Motors — a car dealership and imports concept based in Nairobi, presenting vehicles with clear pricing and a direct line to enquire on WhatsApp. It's where my interest in vehicles and my web development skills meet in one live project.</p>
+        <a href="https://masitsakibiru-netizen.github.io/masitsa-motors/" target="_blank" rel="noopener" class="btn btn-primary btn-small">Explore Masitsa Motors &#8599;</a>
+      </div>
+    </div>
+  </section>
 
-            <h3>Autocad 3D Modelling</h3>
-            <p>Advanced skills on 3D modelling trying to create something diffrent in automobile industry</p>
-        </div>
+  <!-- JOURNEY -->
+  <section class="section" id="journey">
+    <div class="section-inner">
+      <h2>Journey</h2>
+      <p class="section-lede">No fixed script — just steady progress across a few different tracks at once.</p>
 
-        <div class="card">
-            <img src="ecuprogram.jpeg" alt="Ecu Programming"class="project-img">
+      <ol class="timeline">
+        <li class="timeline-item">
+          <span class="timeline-year">2023</span>
+          <div class="timeline-content">
+            <h3>Started Automotive Engineering</h3>
+            <p>Began a diploma in Automotive Engineering at Pc Kinyanjui TTI, focused on engine systems, electrical circuits, and diagnostics.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-year">Alongside</span>
+          <div class="timeline-content">
+            <h3>Riding for Bolt</h3>
+            <p>Working as a motorbike rider in Nairobi — daily handling, maintenance, and early fault-spotting on two wheels.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-year">Self-taught</span>
+          <div class="timeline-content">
+            <h3>Picked up web design</h3>
+            <p>Learned HTML, CSS, and JavaScript on my own, and started building sites — beginning with this portfolio.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-year">Building</span>
+          <div class="timeline-content">
+            <h3>Launched Masitsa Motors</h3>
+            <p>Combined the automotive interest and the development skills into a live dealership concept site.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-year">Present</span>
+          <div class="timeline-content">
+            <h3>Content creation &amp; what's next</h3>
+            <p>Creating automotive and technology content under the Masitsa name, while continuing my diploma and looking for attachment/internship opportunities to gain hands-on industry experience.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
 
-            <h3>Ecu Programming</h3>
-            <p>Interactng with ecu programming softwares</p>
-        </div>
-
-        <div class="card">
-            <h3>Content creator</h3>
-            <p>Web creation,Automotive content</p>
-        </div>
-    </section>
-
-    <section id="Services" class="Services">
-        <h2>Services</h2>
-        <div class="card">
-        <ul>
-            <li>Basic Bike Diagnostic</li>
-            <li>Content Creation</li>
-            <li>Video Editing</li>
-            <li>Web Design</li>
-            <li>3D Designer</li>
-            <li>ECU Programmer</li>
-            <li>vehicle Auto Service</li>
-        </ul>
-        </div>
-    </section>
-
-    <section class="CV">
-        <h2>Download CV</h2>
-
-        <a href="mycv.pdf" download class="btn">
-            Download My CV
+  <!-- CONTENT / SOCIAL -->
+  <section class="section section-alt" id="content">
+    <div class="section-inner">
+      <h2>Content &amp; community</h2>
+      <p class="section-lede">I share the automotive and tech journey as I go, under the Masitsa name.</p>
+      <div class="social-grid">
+        <a class="social-card" href="https://instagram.com/masitsa__ke" target="_blank" rel="noopener">
+          <span class="social-name">Instagram</span>
+          <span class="social-handle">@masitsa__ke</span>
         </a>
-        </section>
+        <a class="social-card" href="https://tiktok.com/@masitsa__ke" target="_blank" rel="noopener">
+          <span class="social-name">TikTok</span>
+          <span class="social-handle">@masitsa__ke</span>
+        </a>
+        <a class="social-card" href="https://facebook.com/Engmasitsa.ke" target="_blank" rel="noopener">
+          <span class="social-name">Facebook</span>
+          <span class="social-handle">Engmasitsa.ke</span>
+        </a>
+        <a class="social-card" href="https://youtube.com/@Engmasitsa" target="_blank" rel="noopener">
+          <span class="social-name">YouTube</span>
+          <span class="social-handle">@Engmasitsa</span>
+        </a>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact" class="contact">
-        <h2>contact</h2>
-        <p>Email:masitsakibiru@gmail.com</p>
-    </section>
+  <!-- VISION -->
+  <section class="section" id="vision">
+    <div class="section-inner vision-layout">
+      <div>
+        <h2>Building more than a career</h2>
+        <p>I'm not just working toward a job title — I want to build things: a dealership brand, useful websites, and content that's genuinely helpful to people interested in cars and technology. Automotive engineering gives me the technical grounding; web development and content creation give me the tools to build and share what I know beyond a single workplace.</p>
+        <p>It's early — Masitsa Motors is one concrete step in that direction, and I intend to keep building from here.</p>
+      </div>
+      <div class="building-list">
+        <span class="panel-label">Currently building</span>
+        <div class="building-item">
+          <span class="status-pill status-live">Live</span>
+          <span>Masitsa Motors — ongoing inventory &amp; feature updates</span>
+        </div>
+        <div class="building-item">
+          <span class="status-pill status-progress">Growing</span>
+          <span>Automotive &amp; tech content under the Masitsa name</span>
+        </div>
+        <div class="building-item">
+          <span class="status-pill status-progress">Studying</span>
+          <span>Automotive Engineering diploma, Pc Kinyanjui TTI</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <!-- SKILLS -->
+  <section class="section section-alt" id="skills">
+    <div class="section-inner">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Technical</h3>
+          <ul class="plain-list">
+            <li>HTML &amp; CSS</li>
+            <li>JavaScript basics</li>
+            <li>Git &amp; GitHub</li>
+            <li>Web design</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Automotive</h3>
+          <ul class="plain-list">
+            <li>Vehicle diagnostics &amp; repair basics</li>
+            <li>Engine systems — petrol &amp; diesel</li>
+            <li>Electrical systems basics</li>
+            <li>AutoCAD</li>
+            <li>OBD diagnostic tools</li>
+            <li>Preventive maintenance</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Professional</h3>
+          <ul class="plain-list">
+            <li>Hardworking &amp; quick learner</li>
+            <li>Reliable and disciplined</li>
+            <li>Problem solving</li>
+            <li>Content creation &amp; video editing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY WORK WITH ME -->
+  <section class="section" id="why">
+    <div class="section-inner">
+      <h2>Why work with me</h2>
+      <div class="why-grid">
+        <div class="why-item">
+          <h3>Technical + practical</h3>
+          <p>Classroom fundamentals paired with hands-on time on real vehicles and real code.</p>
+        </div>
+        <div class="why-item">
+          <h3>Builder mindset</h3>
+          <p>I'd rather ship a working concept — like Masitsa Motors — than just talk about an idea.</p>
+        </div>
+        <div class="why-item">
+          <h3>Automotive + technology</h3>
+          <p>A combination that's rare to find in one person, and one I'm actively growing on both sides.</p>
+        </div>
+        <div class="why-item">
+          <h3>Always learning</h3>
+          <p>Still early in my journey, and honest about it — every project here is a real step, not a finished résumé.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-alt" id="contact">
+    <div class="section-inner contact-layout">
+      <div>
+        <h2>Get in touch</h2>
+        <p class="section-lede">Open to attachment/internship opportunities, collaborations, and freelance web work.</p>
+        <div class="contact-list">
+          <a class="contact-row" href="mailto:masitsakibiru@gmail.com">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">masitsakibiru@gmail.com</span>
+          </a>
+          <a class="contact-row" href="tel:+254743485587">
+            <span class="contact-label">Phone</span>
+            <span class="contact-value">+254 743 485 587</span>
+          </a>
+          <a class="contact-row" href="https://wa.me/254743485587" target="_blank" rel="noopener">
+            <span class="contact-label">WhatsApp</span>
+            <span class="contact-value">Message directly &#8594;</span>
+          </a>
+        </div>
+        <a href="assets/Emmanuel-Masitsa-CV.pdf" download class="btn btn-primary" style="margin-top: 2rem;">Download my CV</a>
+      </div>
+
+      <form class="contact-form" id="contact-form" action="mailto:masitsakibiru@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <p class="form-note">Opens your email app with this message ready to send.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="section-inner footer-inner">
+    <div>
+      <span class="brand-name">Emmanuel Masitsa</span>
+      <p class="footer-tag">Automotive Engineer &middot; Developer &middot; Content Creator</p>
+    </div>
+    <nav class="footer-nav">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#automotive">Automotive</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="footer-social">
+      <a href="https://instagram.com/masitsa__ke" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://tiktok.com/@masitsa__ke" target="_blank" rel="noopener">TikTok</a>
+      <a href="https://youtube.com/@Engmasitsa" target="_blank" rel="noopener">YouTube</a>
+    </div>
+  </div>
+  <div class="section-inner footer-bottom">
+    <p>&copy; <span id="year"></span> Emmanuel Masitsa. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
